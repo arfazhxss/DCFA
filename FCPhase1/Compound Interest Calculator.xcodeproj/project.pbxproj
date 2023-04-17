@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8849968829EBE7A700CD43C0 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849968729EBE7A700CD43C0 /* test.swift */; };
+		885BF1E429EA905800E1C06D /* Compound_Interest_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1E329EA905800E1C06D /* Compound_Interest_CalculatorApp.swift */; };
+		885BF1E629EA905800E1C06D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1E529EA905800E1C06D /* ContentView.swift */; };
+		885BF1E829EA905900E1C06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885BF1E729EA905900E1C06D /* Assets.xcassets */; };
+		885BF1EB29EA905900E1C06D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885BF1EA29EA905900E1C06D /* Preview Assets.xcassets */; };
+		885BF1ED29EA905900E1C06D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1EC29EA905900E1C06D /* Persistence.swift */; };
+		885BF1F029EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1EE29EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodeld */; };
+		885BF1FB29EA905900E1C06D /* Compound_Interest_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1FA29EA905900E1C06D /* Compound_Interest_CalculatorTests.swift */; };
+		885BF20529EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF20429EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift */; };
+		885BF20729EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF20629EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift */; };
+		885BF21429EA925300E1C06D /* Test001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF21329EA925300E1C06D /* Test001.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		885BF1F729EA905900E1C06D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 885BF1D829EA905800E1C06D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885BF1DF29EA905800E1C06D;
+			remoteInfo = "Compound Interest Calculator";
+		};
+		885BF20129EA905900E1C06D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 885BF1D829EA905800E1C06D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885BF1DF29EA905800E1C06D;
+			remoteInfo = "Compound Interest Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8849968729EBE7A700CD43C0 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		885BF1E029EA905800E1C06D /* Compound Interest Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compound Interest Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF1E329EA905800E1C06D /* Compound_Interest_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorApp.swift; sourceTree = "<group>"; };
+		885BF1E529EA905800E1C06D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		885BF1E729EA905900E1C06D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		885BF1EA29EA905900E1C06D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		885BF1EC29EA905900E1C06D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		885BF1EF29EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Compound_Interest_Calculator.xcdatamodel; sourceTree = "<group>"; };
+		885BF1F129EA905900E1C06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885BF1F629EA905900E1C06D /* Compound Interest CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Compound Interest CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF1FA29EA905900E1C06D /* Compound_Interest_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorTests.swift; sourceTree = "<group>"; };
+		885BF20029EA905900E1C06D /* Compound Interest CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Compound Interest CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		885BF20429EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorUITests.swift; sourceTree = "<group>"; };
+		885BF20629EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		885BF21329EA925300E1C06D /* Test001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test001.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		885BF1DD29EA905800E1C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF1F329EA905900E1C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF1FD29EA905900E1C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		885BF1D729EA905800E1C06D = {
+			isa = PBXGroup;
+			children = (
+				885BF21329EA925300E1C06D /* Test001.swift */,
+				8849968729EBE7A700CD43C0 /* test.swift */,
+				885BF1E229EA905800E1C06D /* Compound Interest Calculator */,
+				885BF1F929EA905900E1C06D /* Compound Interest CalculatorTests */,
+				885BF20329EA905900E1C06D /* Compound Interest CalculatorUITests */,
+				885BF1E129EA905800E1C06D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		885BF1E129EA905800E1C06D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				885BF1E029EA905800E1C06D /* Compound Interest Calculator.app */,
+				885BF1F629EA905900E1C06D /* Compound Interest CalculatorTests.xctest */,
+				885BF20029EA905900E1C06D /* Compound Interest CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		885BF1E229EA905800E1C06D /* Compound Interest Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				885BF1E329EA905800E1C06D /* Compound_Interest_CalculatorApp.swift */,
+				885BF1E529EA905800E1C06D /* ContentView.swift */,
+				885BF1E729EA905900E1C06D /* Assets.xcassets */,
+				885BF1EC29EA905900E1C06D /* Persistence.swift */,
+				885BF1F129EA905900E1C06D /* Info.plist */,
+				885BF1EE29EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodeld */,
+				885BF1E929EA905900E1C06D /* Preview Content */,
+			);
+			path = "Compound Interest Calculator";
+			sourceTree = "<group>";
+		};
+		885BF1E929EA905900E1C06D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				885BF1EA29EA905900E1C06D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		885BF1F929EA905900E1C06D /* Compound Interest CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				885BF1FA29EA905900E1C06D /* Compound_Interest_CalculatorTests.swift */,
+			);
+			path = "Compound Interest CalculatorTests";
+			sourceTree = "<group>";
+		};
+		885BF20329EA905900E1C06D /* Compound Interest CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				885BF20429EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift */,
+				885BF20629EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift */,
+			);
+			path = "Compound Interest CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		885BF1DF29EA905800E1C06D /* Compound Interest Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885BF20A29EA905900E1C06D /* Build configuration list for PBXNativeTarget "Compound Interest Calculator" */;
+			buildPhases = (
+				885BF1DC29EA905800E1C06D /* Sources */,
+				885BF1DD29EA905800E1C06D /* Frameworks */,
+				885BF1DE29EA905800E1C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Compound Interest Calculator";
+			productName = "Compound Interest Calculator";
+			productReference = 885BF1E029EA905800E1C06D /* Compound Interest Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885BF1F529EA905900E1C06D /* Compound Interest CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885BF20D29EA905900E1C06D /* Build configuration list for PBXNativeTarget "Compound Interest CalculatorTests" */;
+			buildPhases = (
+				885BF1F229EA905900E1C06D /* Sources */,
+				885BF1F329EA905900E1C06D /* Frameworks */,
+				885BF1F429EA905900E1C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				885BF1F829EA905900E1C06D /* PBXTargetDependency */,
+			);
+			name = "Compound Interest CalculatorTests";
+			productName = "Compound Interest CalculatorTests";
+			productReference = 885BF1F629EA905900E1C06D /* Compound Interest CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		885BF1FF29EA905900E1C06D /* Compound Interest CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885BF21029EA905900E1C06D /* Build configuration list for PBXNativeTarget "Compound Interest CalculatorUITests" */;
+			buildPhases = (
+				885BF1FC29EA905900E1C06D /* Sources */,
+				885BF1FD29EA905900E1C06D /* Frameworks */,
+				885BF1FE29EA905900E1C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				885BF20229EA905900E1C06D /* PBXTargetDependency */,
+			);
+			name = "Compound Interest CalculatorUITests";
+			productName = "Compound Interest CalculatorUITests";
+			productReference = 885BF20029EA905900E1C06D /* Compound Interest CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		885BF1D829EA905800E1C06D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					885BF1DF29EA905800E1C06D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					885BF1F529EA905900E1C06D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 885BF1DF29EA905800E1C06D;
+					};
+					885BF1FF29EA905900E1C06D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 885BF1DF29EA905800E1C06D;
+					};
+				};
+			};
+			buildConfigurationList = 885BF1DB29EA905800E1C06D /* Build configuration list for PBXProject "Compound Interest Calculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 885BF1D729EA905800E1C06D;
+			productRefGroup = 885BF1E129EA905800E1C06D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				885BF1DF29EA905800E1C06D /* Compound Interest Calculator */,
+				885BF1F529EA905900E1C06D /* Compound Interest CalculatorTests */,
+				885BF1FF29EA905900E1C06D /* Compound Interest CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		885BF1DE29EA905800E1C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF1EB29EA905900E1C06D /* Preview Assets.xcassets in Resources */,
+				885BF1E829EA905900E1C06D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF1F429EA905900E1C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF1FE29EA905900E1C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		885BF1DC29EA905800E1C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF1F029EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodeld in Sources */,
+				8849968829EBE7A700CD43C0 /* test.swift in Sources */,
+				885BF1ED29EA905900E1C06D /* Persistence.swift in Sources */,
+				885BF1E629EA905800E1C06D /* ContentView.swift in Sources */,
+				885BF1E429EA905800E1C06D /* Compound_Interest_CalculatorApp.swift in Sources */,
+				885BF21429EA925300E1C06D /* Test001.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF1F229EA905900E1C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF1FB29EA905900E1C06D /* Compound_Interest_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885BF1FC29EA905900E1C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885BF20529EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift in Sources */,
+				885BF20729EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		885BF1F829EA905900E1C06D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 885BF1DF29EA905800E1C06D /* Compound Interest Calculator */;
+			targetProxy = 885BF1F729EA905900E1C06D /* PBXContainerItemProxy */;
+		};
+		885BF20229EA905900E1C06D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 885BF1DF29EA905800E1C06D /* Compound Interest Calculator */;
+			targetProxy = 885BF20129EA905900E1C06D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		885BF20829EA905900E1C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		885BF20929EA905900E1C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		885BF20B29EA905900E1C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Compound Interest Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 2H7QWP786X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burgir.arfazhxss.Compound-Interest-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885BF20C29EA905900E1C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Compound Interest Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 2H7QWP786X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burgir.arfazhxss.Compound-Interest-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		885BF20E29EA905900E1C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H7QWP786X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burgir.arfazhxss.Compound-Interest-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Compound Interest Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Compound Interest Calculator";
+			};
+			name = Debug;
+		};
+		885BF20F29EA905900E1C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H7QWP786X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burgir.arfazhxss.Compound-Interest-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Compound Interest Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Compound Interest Calculator";
+			};
+			name = Release;
+		};
+		885BF21129EA905900E1C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H7QWP786X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burgir.arfazhxss.Compound-Interest-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Compound Interest Calculator";
+			};
+			name = Debug;
+		};
+		885BF21229EA905900E1C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H7QWP786X;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "burgir.arfazhxss.Compound-Interest-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Compound Interest Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		885BF1DB29EA905800E1C06D /* Build configuration list for PBXProject "Compound Interest Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF20829EA905900E1C06D /* Debug */,
+				885BF20929EA905900E1C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885BF20A29EA905900E1C06D /* Build configuration list for PBXNativeTarget "Compound Interest Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF20B29EA905900E1C06D /* Debug */,
+				885BF20C29EA905900E1C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885BF20D29EA905900E1C06D /* Build configuration list for PBXNativeTarget "Compound Interest CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF20E29EA905900E1C06D /* Debug */,
+				885BF20F29EA905900E1C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885BF21029EA905900E1C06D /* Build configuration list for PBXNativeTarget "Compound Interest CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885BF21129EA905900E1C06D /* Debug */,
+				885BF21229EA905900E1C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		885BF1EE29EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				885BF1EF29EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodel */,
+			);
+			currentVersion = 885BF1EF29EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodel */;
+			path = Compound_Interest_Calculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 885BF1D829EA905800E1C06D /* Project object */;
+}
