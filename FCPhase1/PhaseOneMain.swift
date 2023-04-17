@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Test001: View {
+struct PhaseOneMain: View {
     @State var showSheet1: Bool = false
     @State var showSheet2: Bool = false
     @State var initialInvestment: Float = 0
@@ -249,7 +249,7 @@ struct ThirdScreen: View {
 
 struct Test001_Previews: PreviewProvider {
     static var previews: some View {
-        Test001()
+        PhaseOneMain()
         //SecondScreen(finalAmount: 3500.00)
     }
 }

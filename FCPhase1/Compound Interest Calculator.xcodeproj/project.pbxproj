@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88223A1429EDFCE300619078 /* PhaseOneMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88223A1329EDFCE300619078 /* PhaseOneMain.swift */; };
 		8849968829EBE7A700CD43C0 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849968729EBE7A700CD43C0 /* test.swift */; };
 		885BF1E429EA905800E1C06D /* Compound_Interest_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1E329EA905800E1C06D /* Compound_Interest_CalculatorApp.swift */; };
 		885BF1E629EA905800E1C06D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1E529EA905800E1C06D /* ContentView.swift */; };
@@ -17,7 +18,7 @@
 		885BF1FB29EA905900E1C06D /* Compound_Interest_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1FA29EA905900E1C06D /* Compound_Interest_CalculatorTests.swift */; };
 		885BF20529EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF20429EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift */; };
 		885BF20729EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF20629EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift */; };
-		885BF21429EA925300E1C06D /* Test001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF21329EA925300E1C06D /* Test001.swift */; };
+		88B2DAA829EDFC7800067EF5 /* PhaseOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2DAA729EDFC7800067EF5 /* PhaseOneTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88223A1329EDFCE300619078 /* PhaseOneMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhaseOneMain.swift; sourceTree = "<group>"; };
 		8849968729EBE7A700CD43C0 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		885BF1E029EA905800E1C06D /* Compound Interest Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compound Interest Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		885BF1E329EA905800E1C06D /* Compound_Interest_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorApp.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		885BF20029EA905900E1C06D /* Compound Interest CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Compound Interest CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		885BF20429EA905900E1C06D /* Compound_Interest_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorUITests.swift; sourceTree = "<group>"; };
 		885BF20629EA905900E1C06D /* Compound_Interest_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		885BF21329EA925300E1C06D /* Test001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test001.swift; sourceTree = "<group>"; };
+		88B2DAA729EDFC7800067EF5 /* PhaseOneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhaseOneTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,9 @@
 		885BF1D729EA905800E1C06D = {
 			isa = PBXGroup;
 			children = (
-				885BF21329EA925300E1C06D /* Test001.swift */,
+				88223A1329EDFCE300619078 /* PhaseOneMain.swift */,
 				8849968729EBE7A700CD43C0 /* test.swift */,
+				88B2DAA729EDFC7800067EF5 /* PhaseOneTests.swift */,
 				885BF1E229EA905800E1C06D /* Compound Interest Calculator */,
 				885BF1F929EA905900E1C06D /* Compound Interest CalculatorTests */,
 				885BF20329EA905900E1C06D /* Compound Interest CalculatorUITests */,
@@ -273,10 +276,11 @@
 			files = (
 				885BF1F029EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodeld in Sources */,
 				8849968829EBE7A700CD43C0 /* test.swift in Sources */,
+				88B2DAA829EDFC7800067EF5 /* PhaseOneTests.swift in Sources */,
 				885BF1ED29EA905900E1C06D /* Persistence.swift in Sources */,
 				885BF1E629EA905800E1C06D /* ContentView.swift in Sources */,
+				88223A1429EDFCE300619078 /* PhaseOneMain.swift in Sources */,
 				885BF1E429EA905800E1C06D /* Compound_Interest_CalculatorApp.swift in Sources */,
-				885BF21429EA925300E1C06D /* Test001.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
