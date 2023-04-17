@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		88223A1429EDFCE300619078 /* PhaseOneMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88223A1329EDFCE300619078 /* PhaseOneMain.swift */; };
-		8849968829EBE7A700CD43C0 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8849968729EBE7A700CD43C0 /* test.swift */; };
 		885BF1E429EA905800E1C06D /* Compound_Interest_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1E329EA905800E1C06D /* Compound_Interest_CalculatorApp.swift */; };
 		885BF1E629EA905800E1C06D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BF1E529EA905800E1C06D /* ContentView.swift */; };
 		885BF1E829EA905900E1C06D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885BF1E729EA905900E1C06D /* Assets.xcassets */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		88223A1329EDFCE300619078 /* PhaseOneMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhaseOneMain.swift; sourceTree = "<group>"; };
-		8849968729EBE7A700CD43C0 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		885BF1E029EA905800E1C06D /* Compound Interest Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compound Interest Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		885BF1E329EA905800E1C06D /* Compound_Interest_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compound_Interest_CalculatorApp.swift; sourceTree = "<group>"; };
 		885BF1E529EA905800E1C06D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				88223A1329EDFCE300619078 /* PhaseOneMain.swift */,
-				8849968729EBE7A700CD43C0 /* test.swift */,
 				88B2DAA729EDFC7800067EF5 /* PhaseOneTests.swift */,
 				885BF1E229EA905800E1C06D /* Compound Interest Calculator */,
 				885BF1F929EA905900E1C06D /* Compound Interest CalculatorTests */,
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				885BF1F029EA905900E1C06D /* Compound_Interest_Calculator.xcdatamodeld in Sources */,
-				8849968829EBE7A700CD43C0 /* test.swift in Sources */,
 				88B2DAA829EDFC7800067EF5 /* PhaseOneTests.swift in Sources */,
 				885BF1ED29EA905900E1C06D /* Persistence.swift in Sources */,
 				885BF1E629EA905800E1C06D /* ContentView.swift in Sources */,
