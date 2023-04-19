@@ -38,7 +38,7 @@ struct PhaseOneTests: View {
     
     struct test_Previews: PreviewProvider {
         static var previews: some View {
-            test()
+            PhaseOneTests()
         }
     }
 }

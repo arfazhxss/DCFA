@@ -5,6 +5,7 @@
 //  Created by Arfaz Hussain on 2023-04-15.
 //
 
+import Charts
 import SwiftUI
 
 struct PhaseOneMain: View {
@@ -13,7 +14,7 @@ struct PhaseOneMain: View {
     @State var initialInvestment: Float = 0
     @State var AnnualInterestRate: Float = 0.0
     @State var regContributions: Float = 0.0
-//    @State var regCType: String = "Yearly"
+    @State var regCType: String = "nil"
     @State var yearsToGrow: Int = 1
     @State var finalAmount: Float = 0.0
     @State private var selectedOption: String? = nil
@@ -99,18 +100,33 @@ struct PhaseOneMain: View {
                     )) {
                         Text("Weekly")
                     }
+                    .onReceive([selectedOption].publisher.first()) { value in
+                            if value == "Weekly" {
+                                regCType = "Weekly"
+                            }
+                        }
                     Toggle(isOn: Binding<Bool>(
                         get: { selectedOption == "Monthly" },
                         set: { if $0 { selectedOption = "Monthly" } }
                     )) {
                         Text("Monthly")
                     }
+                    .onReceive([selectedOption].publisher.first()) { value in
+                            if value == "Weekly" {
+                                regCType="Monthly"
+                            }
+                        }
                     Toggle(isOn: Binding<Bool>(
                         get: { selectedOption == "Yearly" },
                         set: { if $0 { selectedOption = "Yearly" } }
                     )) {
                         Text("Yearly")
                     }
+                    .onReceive([selectedOption].publisher.first()) { value in
+                            if value == "Weekly" {
+                                regCType="Yearly"
+                            }
+                        }
                 }.frame(width:200).padding(10).background(Color.blue.opacity(0.2)).cornerRadius(20)
                 Spacer().frame(maxHeight: 30)
                 HStack (alignment: .center) {
@@ -141,7 +157,13 @@ struct PhaseOneMain: View {
                                 .background(calculationValidation() ? Color.blue.cornerRadius(10) : Color.gray.cornerRadius(10))
                         })
                     .sheet(isPresented: $showSheet1, content: {
-                        SecondScreen(initialInvestment: self.initialInvestment, AnnualInterestRate: self.AnnualInterestRate, yearsToGrow: self.yearsToGrow, regContributions: self.regContributions)
+                        SecondScreen(
+                            initialInvestment: self.initialInvestment,
+                            AnnualInterestRate: self.AnnualInterestRate,
+                            yearsToGrow: self.yearsToGrow,
+                            regContributions: self.regContributions,
+                            regCType: self.regCType
+                        )
                     })
                     Spacer()
                 }.frame(width: .infinity, height: 100)
@@ -162,32 +184,43 @@ struct SecondScreen: View {
     var yearsToGrow: Int
     var regContributions: Float
     var finalAmount: Float
+    var regCType: String
+    
+    var test1: Float = 0
+    var test2: Float = 0
+    
+    init(initialInvestment: Float, AnnualInterestRate: Float, yearsToGrow: Int, regContributions: Float, regCType: String) {
+        self.initialInvestment = initialInvestment
+        self.AnnualInterestRate = AnnualInterestRate
+        self.yearsToGrow = yearsToGrow
+        self.regContributions = regContributions
+        self.regCType = regCType
 
-//    init(initialInvestment: Float, AnnualInterestRate: Float, yearsToGrow: Int, regContributions: Float) {
-//        self.initialInvestment = initialInvestment
-//        self.AnnualInterestRate = AnnualInterestRate
-//        self.yearsToGrow = yearsToGrow
-//        let n: Float = 1 // interest applied yearly
-//        let A1 = initialInvestment * pow(1 + AnnualInterestRate / (n * 100), n * Float(yearsToGrow))
-//
-//        self.finalAmount = A1
-//        }
-    init(initialInvestment: Float, AnnualInterestRate: Float, yearsToGrow: Int, regContributions: Float) {
-            self.initialInvestment = initialInvestment
-            self.AnnualInterestRate = AnnualInterestRate
-            self.yearsToGrow = yearsToGrow
-            self.regContributions = regContributions
-
-            let n: Float = 1 // interest applied yearly
-            let t: Int = self.yearsToGrow
-            let r: Float = self.AnnualInterestRate / 100
-
-            let A1 = initialInvestment * pow(1 + r / n, n * Float(t))
-            let A2 = regContributions * pow((1 + r / n),((n * Float(t)) - 1) / (r / n))
-
-            self.finalAmount = A1 + A2
-             //self.finalAmount = A1
+        // SWITCH CASE FOR REGCTYPE : WEEKLY OR MONTHLY OR YEARLY, CHANGING THE VALUE OF N
+        // Different types of regular contributions
+        let n: Float // Number of times interest is applied in a year
+        switch regCType {
+            case "Weekly":
+                n = 52 // 52 weeks in a year
+            case "Monthly":
+                n = 12 // 12 months in a year
+            case "Yearly":
+                n = 1 // Interest applied yearly
+            default:
+                n = 1 // Default to yearly
         }
+    
+        let t: Int = self.yearsToGrow
+        let r: Float = self.AnnualInterestRate / 100
+        let i = pow(1 + r, 1 / n) -1
+                                                                                        // Discounted Cash Flow Analysis (DCFA)
+        let A1 = initialInvestment * pow(1 + r, Float(t))                               // F = P x (F/P,i,N)
+        let A2 = regContributions * ((pow(1 + (), (n*Float(t))) - 1) / ())    // F = A x (F/A,i,N)
+        test1 = A1
+        test2 = A2
+
+        self.finalAmount = A1 + A2
+    }
     
     var body: some View {
             ZStack (alignment: .topLeading) {
@@ -207,6 +240,11 @@ struct SecondScreen: View {
                     Spacer().frame(width: 100)
                     VStack (alignment: .trailing) {
                         Spacer()
+                        Text("A1: \(String(format: "%.2f", (test1)))")
+                            .frame(maxWidth: 400, alignment: .leading)
+                        Text("A2: \(String(format: "%.2f", (test2)))")
+                            .frame(maxWidth: 400, alignment: .leading)
+                        Spacer().frame(height: 50)
                         Text("Principal Invested: \(String(format: "%.2f", (initialInvestment)))")
                             .frame(maxWidth: 400, alignment: .leading)
                         Text("Interest Gained: \(String(format: "%.2f", (finalAmount - initialInvestment)))")
@@ -249,7 +287,7 @@ struct ThirdScreen: View {
 
 struct Test001_Previews: PreviewProvider {
     static var previews: some View {
-        PhaseOneMain()
-        //SecondScreen(finalAmount: 3500.00)
+        //PhaseOneMain()
+        SecondScreen(initialInvestment: 4200.00, AnnualInterestRate: 50.00, yearsToGrow: 7, regContributions: 1, regCType: "Yearly")
     }
 }
