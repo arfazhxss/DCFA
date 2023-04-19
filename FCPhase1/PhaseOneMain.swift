@@ -212,10 +212,10 @@ struct SecondScreen: View {
     
         let t: Int = self.yearsToGrow
         let r: Float = self.AnnualInterestRate / 100
-        let i = pow(1 + r, 1 / n) -1
+        let i = pow(1 + r, 1 / n) - 1
                                                                                         // Discounted Cash Flow Analysis (DCFA)
         let A1 = initialInvestment * pow(1 + r, Float(t))                               // F = P x (F/P,i,N)
-        let A2 = regContributions * ((pow(1 + (), (n*Float(t))) - 1) / ())    // F = A x (F/A,i,N)
+        let A2 = regContributions * ((pow(1 + (i), (n*Float(t))) - 1) / (i))    // F = A x (F/A,i,N)
         test1 = A1
         test2 = A2
 
