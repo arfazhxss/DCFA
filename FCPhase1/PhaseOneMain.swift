@@ -8,7 +8,27 @@
 import Charts
 import SwiftUI
 
+struct MyList1: View {
+    var body: some View {
+        List {
+            Text("1:Item 1")
+            Text("1:Item 2")
+            Text("1:Item 3")
+        }
+    }
+}
+
+struct MyList2: View {
+    var body: some View {
+        List {
+            Text("2:Item 1")
+            Text("2:Item 2")
+        }
+    }
+}
+
 struct PhaseOneMain: View {
+    @Environment(\.verticalSizeClass) var verticalSizeClass
     @State var showSheet1: Bool = false
     @State var showSheet2: Bool = false
     @State var initialInvestment: Float = 0
@@ -20,6 +40,9 @@ struct PhaseOneMain: View {
     @State private var selectedOption: String? = nil
     var body: some View {
         NavigationView {
+            if verticalSizeClass == .compact {
+                List {}
+            }
             VStack () {
                 Text("Compound")
                     .font(.largeTitle)
@@ -188,7 +211,7 @@ struct SecondScreen: View {
     
     var test1: Float = 0
     var test2: Float = 0
-    
+    var n: Float // Number of times interest is applied in a year
     init(initialInvestment: Float, AnnualInterestRate: Float, yearsToGrow: Int, regContributions: Float, regCType: String) {
         self.initialInvestment = initialInvestment
         self.AnnualInterestRate = AnnualInterestRate
@@ -198,7 +221,6 @@ struct SecondScreen: View {
 
         // SWITCH CASE FOR REGCTYPE : WEEKLY OR MONTHLY OR YEARLY, CHANGING THE VALUE OF N
         // Different types of regular contributions
-        let n: Float // Number of times interest is applied in a year
         switch regCType {
             case "Weekly":
                 n = 52 // 52 weeks in a year
@@ -215,16 +237,16 @@ struct SecondScreen: View {
         let i = pow(1 + r, 1 / n) - 1
                                                                                         // Discounted Cash Flow Analysis (DCFA)
         let A1 = initialInvestment * pow(1 + r, Float(t))                               // F = P x (F/P,i,N)
-        let A2 = regContributions * ((pow(1 + (i), (n*Float(t))) - 1) / (i))    // F = A x (F/A,i,N)
-        test1 = A1
-        test2 = A2
+        let A2 = regContributions * ((pow(1 + (i), (n*Float(t))) - 1) / (i))            // F = A x (F/A,i,N)
+//        test1 = A1
+//        test2 = A2
 
         self.finalAmount = A1 + A2
     }
     
     var body: some View {
             ZStack (alignment: .topLeading) {
-                Color.blue.opacity(0.7).edgesIgnoringSafeArea(.all)
+                Color.blue.opacity(0.3).edgesIgnoringSafeArea(.all)
                 Button (
                     action: {
                         presentationMode.wrappedValue.dismiss()
@@ -240,12 +262,12 @@ struct SecondScreen: View {
                     Spacer().frame(width: 100)
                     VStack (alignment: .trailing) {
                         Spacer()
-                        Text("A1: \(String(format: "%.2f", (test1)))")
-                            .frame(maxWidth: 400, alignment: .leading)
-                        Text("A2: \(String(format: "%.2f", (test2)))")
-                            .frame(maxWidth: 400, alignment: .leading)
-                        Spacer().frame(height: 50)
-                        Text("Principal Invested: \(String(format: "%.2f", (initialInvestment)))")
+//                        Text("A1: \(String(format: "%.2f", (test1)))")
+//                            .frame(maxWidth: 400, alignment: .leading)
+//                        Text("A2: \(String(format: "%.2f", (test2)))")
+//                            .frame(maxWidth: 400, alignment: .leading)
+//                        Spacer().frame(height: 50)
+                        Text("Principal Invested: \(String(format: "%.2f", (initialInvestment+(n*Float(yearsToGrow)))))")
                             .frame(maxWidth: 400, alignment: .leading)
                         Text("Interest Gained: \(String(format: "%.2f", (finalAmount - initialInvestment)))")
                             .frame(maxWidth: 400, alignment: .leading)
@@ -287,7 +309,7 @@ struct ThirdScreen: View {
 
 struct Test001_Previews: PreviewProvider {
     static var previews: some View {
-        //PhaseOneMain()
-        SecondScreen(initialInvestment: 4200.00, AnnualInterestRate: 50.00, yearsToGrow: 7, regContributions: 1, regCType: "Yearly")
+        PhaseOneMain()
+        SecondScreen(initialInvestment: 4200.00, AnnualInterestRate: 50.00, yearsToGrow: 7, regContributions: 1, regCType: "Weekly")
     }
 }
