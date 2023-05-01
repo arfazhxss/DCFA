@@ -1,2 +1,2 @@
-# FinanceCalculator
+# Discounted Cash Flow Analysis
  
