@@ -40,9 +40,9 @@ struct PhaseOneMain: View {
     @State private var selectedOption: String? = nil
     var body: some View {
         NavigationView {
-            if verticalSizeClass == .compact {
-                List {}
-            }
+//            if verticalSizeClass == .compact {
+//                List {}
+//            }
             VStack () {
                 Text("Compound")
                     .font(.largeTitle)
